@@ -4,15 +4,17 @@ const viewport = {
 };
 
 module.exports = {
-  args: [
-    "--no-sandbox",
-    "--disable-setuid-sandbox",
-    "--disable-infobars",
-    `--window-size=${viewport.width},${viewport.height}`,
-  ],
-  defaultViewport: {
-    width: viewport.width,
-    height: viewport.height,
+  launch: {
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      `--window-size=${viewport.width},${viewport.height}`,
+    ],
+    defaultViewport: {
+      width: viewport.width,
+      height: viewport.height,
+    },
   },
   browserContext: "incognito",
   server: {
