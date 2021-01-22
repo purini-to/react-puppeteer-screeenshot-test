@@ -20,7 +20,17 @@ jobs:
 
       - name: Run tests with images update
         if: contains(github.event.head_commit.message, '[update it]') == true
-        run: npm run test:integration -- -u
+        run: |
+          npm run test:integration -- -u
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add update integration images" -a
+
+      - name: Push test result images
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
 
       - name: Archive integration test results
         uses: actions/upload-artifact@v2
