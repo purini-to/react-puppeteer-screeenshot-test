@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import tw from "twin.macro";
 
@@ -59,6 +59,27 @@ function App() {
 const Container = tw.div`container px-5 py-24 mx-auto text-gray-600 flex-1`;
 
 function Home() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setReady(true), 1000);
+  }, []);
+  if (!ready) {
+    return (
+      <Container>
+        <div tw="animate-pulse flex space-x-4">
+          <div tw="rounded-full bg-gray-400 h-12 w-12"></div>
+          <div tw="flex-1 space-y-4 py-1">
+            <div tw="h-4 bg-gray-400 rounded w-3/4"></div>
+            <div tw="space-y-2">
+              <div tw="h-4 bg-gray-400 rounded"></div>
+              <div tw="h-4 bg-gray-400 rounded w-5/6"></div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    );
+  }
+
   return (
     <Container>
       <div tw="flex flex-wrap w-full mb-16 flex-col items-center text-center">
