@@ -174,6 +174,17 @@ function Pricing() {
               </td>
             </tr>
             <tr>
+              <td tw="border-t-2 border-gray-200 px-4 py-3">Small</td>
+              <td tw="border-t-2 border-gray-200 px-4 py-3">10 Mb/s</td>
+              <td tw="border-t-2 border-gray-200 px-4 py-3">20 GB</td>
+              <td tw="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
+                $8
+              </td>
+              <td tw="border-t-2 border-gray-200 w-10 text-center">
+                <input name="plan" type="radio" />
+              </td>
+            </tr>
+            <tr>
               <td tw="border-t-2 border-gray-200 px-4 py-3">Pro</td>
               <td tw="border-t-2 border-gray-200 px-4 py-3">25 Mb/s</td>
               <td tw="border-t-2 border-gray-200 px-4 py-3">25 GB</td>
@@ -189,7 +200,7 @@ function Pricing() {
               <td tw="border-t-2 border-gray-200 px-4 py-3">36 Mb/s</td>
               <td tw="border-t-2 border-gray-200 px-4 py-3">40 GB</td>
               <td tw="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                $50
+                $42
               </td>
               <td tw="border-t-2 border-gray-200 w-10 text-center">
                 <input name="plan" type="radio" />
@@ -231,7 +242,7 @@ function Pricing() {
           </svg>
         </span>
         <button tw="flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">
-          Button
+          Pay
         </button>
       </div>
     </Container>
@@ -338,32 +349,6 @@ function Users() {
             <div tw="flex-grow">
               <h2 tw="text-gray-900 font-medium">John Doe</h2>
               <p tw="text-gray-500">QA Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div tw="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div tw="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img
-              alt="team"
-              tw="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-              src="https://dummyimage.com/80x80"
-            />
-            <div tw="flex-grow">
-              <h2 tw="text-gray-900 font-medium">John Doe</h2>
-              <p tw="text-gray-500">System</p>
-            </div>
-          </div>
-        </div>
-        <div tw="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div tw="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img
-              alt="team"
-              tw="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-              src="https://dummyimage.com/80x80"
-            />
-            <div tw="flex-grow">
-              <h2 tw="text-gray-900 font-medium">John Doe</h2>
-              <p tw="text-gray-500">Product Manager</p>
             </div>
           </div>
         </div>
