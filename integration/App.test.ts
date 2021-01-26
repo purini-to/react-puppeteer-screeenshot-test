@@ -25,7 +25,7 @@ describe("app", () => {
 
 export async function waitTranslate(
   page: Page,
-  interval: number = 100,
+  interval: number = 200,
   timeout: number = 5000
 ) {
   const t0 = new Date().getTime();
