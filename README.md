@@ -2,6 +2,8 @@
 
 Example of performing screenshot test with puppeteer in a project created with create react app.
 
+[Sample pullrequest](https://github.com/purini-to/react-puppeteer-screeenshot-test/pull/1).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## `npm start`
